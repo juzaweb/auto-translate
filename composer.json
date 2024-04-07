@@ -1,0 +1,32 @@
+{
+    "name": "juzaweb/auto-translate",
+    "type": "juzaweb-plugin",
+    "license": "MIT",
+    "description": "",
+    "extra": {
+        "juzaweb": {
+            "name": "AutoTranslate",
+            "domain": "juau",
+            "providers": [
+                "Juzaweb\\AutoTranslate\\Providers\\AutoTranslateServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Juzaweb\\AutoTranslate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Juzaweb\\AutoTranslate\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0|^8.1"
+    },
+    "require-dev": {
+         "juzaweb/modules": "^1.0",
+         "juzaweb/dev-tool": "^1.0"
+    }
+}
